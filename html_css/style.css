@@ -7,5 +7,14 @@ body
             background:rgb(166, 140, 238)
         }
         .tr2{
-            background:red
+            background:red;
+        }
+
+        .tr1{
+
+            margin-left:100px;
+        }
+        .mydiv{
+
+            border: 1px solid black ;
         }
