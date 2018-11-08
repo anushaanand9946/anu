@@ -13,6 +13,27 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
+<script>
+
+    function Read(){
+        var name=document.getElementById("getname").value;
+        console.log(name)
+    
+        var age=document.getElementById("getage").value;
+        console.log(age)
+        if(age>=18)
+        {
+            console.log("Eligible");
+            alert("Eligible")
+        }
+
+    }
+
+
+</script>
+
+
+
 
 
 </head>
@@ -33,7 +54,7 @@
            <div class="row">
                <div class="col-sm-6">NAME</div>
                
-               <div class="col-sm-6"><input type="text"></div>
+               <div class="col-sm-6"><input type="text" id="getname"/></div>
             </div>
             <br>
             <div class="row">
@@ -46,8 +67,12 @@
                <div class="col-sm-6"><input type="text"></div>
             </div>
             <br>
+            <div class="row">   
+                <div class="col-sm-6">Age</div>
+                <div class="col-sm-6"><input type="text"></div>
+             </div>
             <div class="row">  
-               <div class="col-sm-6"><BUTTON>REGISTER</BUTTON></div>
+               <div class="col-sm-6"><BUTTON onclick=Read();>REGISTER</BUTTON></div>
             </div>
             <br>
 
