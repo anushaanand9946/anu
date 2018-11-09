@@ -26,19 +26,20 @@
 
                 if(x>y&&x>z)
                 {
-                    console.log(x);
+                    var res=x;
                 }
                 else if(y>x&&y>z){
-                    console.log(y);
+                   
+                    var res=y;
                 }
                 else(z>x&&z>y)
                 {
-                    console.log(z);
+                    var res=z;
                 }
 
 
 
-            
+            document.getElementById("result1").innerHTML="<table class='table' ><tr><td>result is<b>"+res+"</b></td></tr></table>"
                 
                 
             }
@@ -56,23 +57,23 @@
 
                 if(x<y&&x<z)
                 {
-                    console.log(x);
+                    var res=x;
                 }
                 else if(y<x&&y<z)
                 {
-                    console.log(y);
+                    var res=y;
                 }
                 else if(z<x&&z<y)
                 {
-                    console.log(z);
+                    var res=z;
                 }
                 else{
-                    console.error();
+                    var res=error;
                     
                 }
 
 
-
+             document.getElementById("result2").innerHTML="<table class='table' ><tr><td>result is<b>"+res+"</b></td></tr></table>"
             
                 
                 
@@ -110,11 +111,22 @@
 
 
                              <div class="row">  
-                                    <div class="col-sm-6"><BUTTON onclick="largest();">largest</BUTTON></div>
+                                    <div class="col-sm-6"><BUTTON type="button" onclick="largest();">largest</BUTTON></div>
                                      
-                                    <div class="col-sm-6"><BUTTON onclick="smallest();">smallest</BUTTON></div>
+                                    <div class="col-sm-6"><BUTTON type="button"onclick="smallest();">smallest</BUTTON></div>
     
                                      </div>
+
+                                     <div class="row">  
+                                            <div class="col-sm-6"><p id="result1"></p></div>
+                                             
+                                            <div class="col-sm-6"><p id="result2"></p></div>
+            
+                                             </div>
+
+
+
+
                         </div>
                     </div>
     

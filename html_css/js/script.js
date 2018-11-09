@@ -8,6 +8,8 @@ function Read(){
     var admnno=document.getElementById("getadmnno").value;
     
     var age=document.getElementById("getage").value;
+
+    var phnno=document.getElementById("getphnno").value;
     
     var op=document.getElementById("district");
     var district=op.options[op.selectedIndex].value;
@@ -16,6 +18,7 @@ function Read(){
     console.log(rollno);
     console.log(admnno);
     console.log(age);
+    console.log(phnno);
     console.log(district);
 
    
