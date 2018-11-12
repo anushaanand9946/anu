@@ -1,0 +1,8 @@
+mytuple=("aa","kk",1,2,3,4,5,"bbb")
+tuples=("anuaanand",66)
+print(mytuple)
+print(mytuple[0])
+print(mytuple[0:3])
+print(mytuple*3)
+print(mytuple[0:])
+print(tuples+mytuple)
